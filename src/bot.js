@@ -69,7 +69,7 @@ function onPayment(session, message) {
 // STATES
 
 function welcome(session) {
-  sendMessage(session, `Hello Token!`)
+  sendMessage(session, `yo CHL!`)
 }
 
 function pong(session) {
@@ -94,9 +94,7 @@ function donate(session) {
 
 function sendMessage(session, message) {
   let controls = [
-    {type: 'button', label: 'Ping', value: 'ping'},
-    {type: 'button', label: 'Count', value: 'count'},
-    {type: 'button', label: 'Donate', value: 'donate'}
+    {type: 'button', label: 'Go', action: "Webview::https://chldapp2.meteorapp.com"},
   ]
   session.reply(SOFA.Message({
     body: message,
