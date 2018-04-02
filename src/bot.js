@@ -94,7 +94,7 @@ function donate(session) {
 
 function sendMessage(session, message) {
   let controls = [
-    {type: 'button', label: 'Go', action: "Webview::https://chldapp2.meteorapp.com"},
+    {type: 'button', label: 'Launch CHL token', action: "Webview::https://chldapp.meteorapp.com"},
   ]
   session.reply(SOFA.Message({
     body: message,
